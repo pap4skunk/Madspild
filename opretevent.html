@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/img/æble2.jpg">
+    <title>Title</title>
+</head>
+
+<body>
+
+<header style="background-color: beige;">
+    <h1 class="Madspild">Madspild</h1>
+
+    <nav class="menu">
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                <a href="index.html">Forside</a>
+                <a href="Om%20os.html">Om os</a>
+                <a href="events.html">Events</a>
+                <a href="op"
+            </div>
+        </div>
+        <a href="FAQ.html">FAQ</a>
+        <a href="Login.html">Login/Opret bruger</a>
+
+    </nav>
+</header>
+
+<main>
+    <div class="container">
+        <img src="/img/madspild.png" alt="madspild">
+        <div class="bar">
+            <div class="indhold">
+                <label for="events">Vælg et event:</label>
+                <select id="events" name="events">
+                    <option value="">-- Vælg --</option>
+                    <option value="foredrag">Foredrag om madspild</option>
+                    <option value="workshop">Workshop: Lav mad af rester</option>
+                    <option value="paneldebat">Paneldebat om bæredygtighed</option>
+                </select>
+
+                <label>Indtast max antal af deltagerer</label>
+
+                <input type="number" name="antal" placeholder="Max antal gøster">
+
+                <label>Indtast dato og tidspunkt for eventet</label>
+
+                <input type="text" name="dato" placeholder="Indtast dato">  Kl: <select id="timer" name="timer">:<option value="">Timer</option><option value="01">01</option><option value="02">02</option><option value="03">03</option><option value="04">04</option><option value="05">05</option><option value="06">06</option><option value="07">07</option><option value="08">08</option><option value="09">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option></select>:<select id="minutter" name="minutter">
+                <option value="">Minutter</option>
+                <option value="00">00</option>
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
+                <option value="40">40</option>
+                <option value="50">50</option>
+            </select>
+
+                <label>Beskrivelse</label>
+                <textarea class="resizedTextbox" maxlength="2400"></textarea>
+
+                <a href="events.html">Tilbage</a>  <a href="events.html">Opret event</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <a class="next" href="side2.html">
+        <button>next</button>
+    </a>
+</footer>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
