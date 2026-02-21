@@ -2,31 +2,76 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/æble2.jpg">
     <title>Title</title>
 </head>
+
 <body>
 
-<form action="index.html" method="post">
+<header style="background-color: beige;">
 
-    <label for="username">username</label>
-    <input type="text" id="username" placeholder="6-15 characters" minlength="6" maxlength="15" required> <br> <br>
+    <nav class="menu">
+        <h1 class="Madspild">🚫Madspild</h1>
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                <a href="index.html">Forside</a>
+                <a href="Om%20os.html">Om os</a>
+                <a href="events.html">Events</a>
+            </div>
 
-    <label for="password">password</label>
-    <input type="password" id="password" placeholder="min 8 characters" minlength="8" required> <br> <br>
+            <a href="FAQ.html">FAQ</a>
+            <a href="Login.html">Login/Opret bruger</a>
+        </div>
+    </nav>
+</header>
 
-    <input type="submit">
-    <input type="reset">
+<main>
+    <div class="container">
+        <div class="bar">
+            <div class="indhold">
+                <div class="foerste-artikel">
+                    <div class="overskrift"><h1>Login</h1></div>
+                    <div class="Tekst3">
+                        <form action="index.html" method="post">
 
-</form>
+                            <label for="username">username</label>
+                            <input type="text" id="username" placeholder="6-15 characters" minlength="6" maxlength="15" required>
 
-<br> <br>
+                            <label for="password">password</label>
+                            <input type="password" id="password" placeholder="min 8 characters" minlength="8" required>
 
-dont have an account?
-<br>
+                            <input type="submit">
+                            <input type="reset">
 
-<a href="Create Account.html">
-    <button style="font-size:15px;">create account</button>
-</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</main>
+
+<footer>
+    <a class="next" href="side2.html">
+        <button>next</button>
+    </a>
+</footer>
+
+
+
+
+
+
+
+
 
 </body>
 </html>
+
+
+
+
