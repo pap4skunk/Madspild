@@ -2,27 +2,23 @@
     position: relative;
     min-height: 100vh;
 }
-body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
 
-        background-image: url("../img/madspild.png");
-        background-size: cover;       /* fylder hele skærmen */
-        background-position: center;
-        background-attachment: fixed; /* flot scroll effekt */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/madspild.png");
+    background-size: cover;       /* fylder hele skærmen */
+    background-position: center;
+    background-attachment: fixed; /* flot scroll effekt */
 }
 
-
-.Madspild{
+.Madspild {
     margin: 0;
     font-size: 30px;
 }
 
-header{
-
-}
-
+header { }
 
 .bar {
     position: relative;
@@ -30,12 +26,11 @@ header{
     left: 50%;
     width: 70%;
     transform: translateX(-50%);
-    white-space: pre-wrap; /* bevarer linjeskift */
+    white-space: pre-wrap;
     padding: 0 24px 24px 24px;
     font-size: 24px;
     background-color: beige;
 }
-
 
 .menu {
     display: flex;
@@ -54,9 +49,10 @@ footer {
     margin-left: auto;
 }
 
-button{
+button {
     font-size: 25px;
 }
+
 .dropbtn {
     background-color: #4CAF50;
     color: white;
@@ -79,7 +75,7 @@ button{
     z-index: 1000;
 }
 
-.dropdown-content a{
+.dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
@@ -90,11 +86,11 @@ button{
     background-color: #f1f1f1;
 }
 
-.dropdown:hover .dropdown-content{
+.dropdown:hover .dropdown-content {
     display: block;
 }
 
-.dropdown:hover .dropbtn{
+.dropdown:hover .dropbtn {
     background-color: #3e8e41;
 }
 
@@ -114,24 +110,40 @@ button{
     top: 10%;
 }
 
+/* ---------------------- ARTIKELBOKSE ---------------------- */
 .indhold {
     background-color: white;
-    padding: 2px;
+    padding: 10px;          /* lidt luft rundt om teksten */
     border: 1px solid black;
     max-width: 100%;
+    margin-bottom: 5px;    /* afstand mellem artikler */
     justify-content: space-between;
-    margin-bottom: 5px;
+}
+
+.indhold h2 {
+    font-size: 20px;        /* mindre overskrift, så det ligner artikler */
+    margin: 5px 0;          /* kompakt afstand */
+}
+
+.indhold p {
+    font-size: 16px;        /* mindre brødtekst */
+    line-height: 1.4;       /* tættere linjer for kompakt look */
+    margin: 5px 0;
+}
+
+.indhold a.links {
+    font-size: 20px;        /* mindre 'Læs mere'-link */
 }
 
 /* Her cutter vi teksten automatisk */
 .kort-tekst {
     display: -webkit-box;
-    -webkit-line-clamp: 3;     /* antal linjer */
+    -webkit-line-clamp: 3;  /* antal linjer der vises */
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
 
-/* Læs mere link */
+/* Læs mere link styling */
 .indhold a {
     display: inline-block;
     margin-top: 10px;
@@ -148,19 +160,15 @@ button{
     margin: 0;
 }
 
-.indhold p{
+.indhold p {
     margin-top: 0;
-}
-
-.indhold {
-    padding-top: 0;
 }
 
 .resizedTextbox {
     width: 700px;
     height: 300px;
-    padding: 5px;           /* tekst starter lidt fra toppen og venstre kant */
-    box-sizing: border-box;  /* padding tælles med i bredden/højden */
+    padding: 5px;
+    box-sizing: border-box;
     vertical-align: top;
     resize: none;
 }
@@ -188,7 +196,7 @@ h1 {
     max-height: 50px;
 }
 
-.overskrift2 h1{
+.overskrift2 h1 {
     width: 100%;
     max-height: 50px;
     font-size: 50px;
